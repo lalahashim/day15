@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>izzi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="navigation">
+        <div class="left-side">
+            <img src="public/logo.png" alt="izzi logo" class="logo">
+            <nav>
+                <a href="#my-orders" class="nav-link">My orders</a>
+                <a href="#help" class="nav-link">Help</a>            
+                <a href="#services" class="nav-link">Services</a>                        
+            </nav>
+        </div>
+        <div class="right-side">
+            <button class="urgent">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+                    <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                </svg>
+                Urgent
+            </button>
+            <div class="profile">
+                <img src="public/avatar.png" alt="profile picture">
+                <p class="profile-name">Elon Mask</p>
+            </div>
+            <img class="british-flag" src="public/british-flag.png" alt="british-flag">
+        </div>
+    </section>
+
+    <section id="purple-bg">
+        <h1>All pros</h1>
+    </section>
+
+    <section id="content">
+        <div id="filter-choices">
+            <div id="filter">
+                <h4>Filters</h4>
+                <form id="filter-form">
+                    <div>
+                        <label>
+                            <input type="checkbox" id="top-pro">Top pros
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" id="new-pro">New pros
+                        </label>
+                    </div>                    
+                    <div>
+                        <label>
+                            <input type="checkbox" id="supervisor">Supervisors
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" id="pros">Pros
+                        </label>
+                    </div>     
+                </form>
+            </div>
+            <div id="sorting">
+                <h4 class="sorting">Sorting</h4>
+                <div class="options">
+                    <div id="rating-choice">
+                        <label for="rating">By rating</label> <br>
+                        <select id="rating" name="rating">
+                            <option value="none"></option>
+                            <option value="ascending" id="rate-asc">Ascending</option>
+                            <option value="descending" id="rate-desc">Descending</option>
+                        </select>
+                    </div>
+                    <div id="tasks-choice">
+                        <label for="tasks-count">By tasks count</label> <br>
+                        <select id="tasks-count" name="tasks-count">
+                            <option value="none"></option>
+                            <option value="ascending" id="tasks-asc">Ascending</option>
+                            <option value="descending" id="tasks-desc">Descending</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="taskers"></div>
+    </section>
+
+    <section id="footer">
+        <img src="public/apps.png" alt="download app">
+        <img src="public/footer.png" alt="footer">
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+body{
+    margin: 0;
+}
+
+
+#navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px 70px;
+    height: 25px;
+}
+
+.left-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.urgent{
+    background-color: blueviolet;
+    color: aliceblue;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.british-flag{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+#purple-bg{
+    background-image: url(public/headbg.png);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+
+    display: flex;
+    align-items: flex-end;
+}
+h1{
+    margin-left: 50px;
+}
+
+
+#content{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 20px 50px;
+}
+
+#filter-choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 15%;
+    gap: 20px;
+}
+#filter form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#filter div{
+    display: flex;
+    align-items: center;
+}
+select{
+    margin: 4px 0 15px 0;
+}
+.sorting{
+    margin-bottom: 13px;
+}
+select {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 7px;
+}
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #A555EC;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: #4F1C51;
+    position: absolute;
+    top: -3px;
+    left: 2px;
+    width: 6px;
+    height: 8px;
+}
+
+
+#taskers{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 10px;
+}
+.card{
+    width: 80%;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 20px 20px 7px 20px;
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+h4{
+    margin: 0;
+}
+.main-info p{
+    margin: 0;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.orders{
+    color: gray;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.tasks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+.top-pro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.new-pro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.description{
+    color: gray;
+}
+
+a{
+    text-decoration: none;
+    color: #A555EC;
+}
+.other{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+}
+.other div{
+    display: flex;
+    align-items: center;   
+    gap: 10px;
+}
+.other p{
+    background-color: #F5EFFF;
+    color: #A555EC;
+    padding: 5px;
+    width: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.other button{
+    background-color: white;
+    color: #A555EC;
+    border: 1px solid #A555EC;
+    border-radius: 5px;
+    width: 100px;
+    padding: 9px;
+    cursor: pointer;
+}
+
+
+#footer img{
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    #purple-bg{
+        height: 120px;
+    }
+    #navigation{
+        height: 90px;
+    }
+    #content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    }
+    #filter-choices{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    }
+    #filter form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    }
+    .options{
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    }
+    #taskers{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+}
